@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:id="@+id/details_activity"
+    android:baselineAligned="false"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.lilyren.myapplication.Activities.DetailsActivity"
+    android:weightSum="1">
+
+
+    <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/fortune_cookie"
+            android:layout_gravity="center"
+            android:layout_marginTop="30sp"/>
+
+    <TextView android:text="@string/detail_page_message"
+        android:id="@+id/details_title"
+        android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/set_date_button"
+        android:textSize="20sp"
+        android:text="Change Date"
+        android:textColor="#223"
+        android:onClick="showDatePickerDialog"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date_textView"
+        android:text="Sep 20, 2015"
+        android:textSize="25sp"
+        android:textColor="#223"
+        />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mark_As_important"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:layout_marginRight="15dp"/>
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/vip_button"
+            android:layout_gravity="center"
+            android:gravity="right"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/details_editText"
+        android:layout_width="match_parent"
+        android:layout_height="179dp"
+        android:textSize="40sp"
+        android:textIsSelectable="false" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:gravity="center_horizontal">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="Confirm"
+        android:textSize="18sp"
+        android:id="@+id/confirm_button" />
+
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancel_button"
+            android:text="Cancel"
+            android:textSize="18sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sync with Calendar"
+        android:textSize="18sp"
+        android:id="@+id/sync_button"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

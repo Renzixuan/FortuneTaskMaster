@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".StartingActivity">
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/vip_sort"
+        android:icon="@drawable/crown_icon"
+        android:title="Priority Sort"
+        app:showAsAction="always"
+        />
+
+    <item android:id="@+id/add_icon"
+        android:icon="@drawable/add"
+        android:title="add"
+        app:showAsAction="always"/>
+</menu>

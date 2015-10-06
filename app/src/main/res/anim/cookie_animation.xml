@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:interpolator="@android:anim/linear_interpolator">
+    <scale android:fromXScale="0.0" android:fromYScale="0.0"
+        android:toXScale="1.0" android:toYScale="1.0"
+        android:duration="1000" android:fillBefore="false" />
+    <translate android:fromXDelta="0" android:fromYDelta="-200"
+        android:duration="1000" />
+
+</set>
